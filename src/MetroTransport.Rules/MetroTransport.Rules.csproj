@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputPath>..\..\bin\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Composition" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MetroTransport.Domain\MetroTransport.Domain.csproj" />
+    <ProjectReference Include="..\MetroTransport.Infra\MetroTransport.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
