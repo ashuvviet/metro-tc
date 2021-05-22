@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c22d695c_002D0fda_002D4c75_002D8d9b_002Dd0db7fb93e0c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestMultipleJournries" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::822DA9C0-A0B8-4B09-9832-BA0FEDE7E68D::.NETCoreApp,Version=v5.0::MetroTransport.FunctionalTests.TigerCardTests.TestMultipleJournries&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d30b8388_002Dd4bc_002D4e8e_002Da53d_002Dd338ebda7ac7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestMultipleJournries #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::822DA9C0-A0B8-4B09-9832-BA0FEDE7E68D::.NETCoreApp,Version=v5.0::MetroTransport.FunctionalTests.TigerCardTests.TestMultipleJournries&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

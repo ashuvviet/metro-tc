@@ -3,20 +3,25 @@ using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using MetroTransport.Application.Services;
-using MetroTransport.Domain.Contracts;
+using MetroTransport.Domain;
 using MetroTransport.Infra;
+using MetroTransport.Infra.Attributes;
 
 
 namespace MetroTransport.Application
 {
   public class Resolver
   {
-    private static volatile bool isloaded;
+    private static volatile bool _isloaded;
 
     [ImportMany(typeof(IFareBasedRule))]
-    private readonly List<Lazy<IFareBasedRule>> rulesImports = new List<Lazy<IFareBasedRule>>();
+    private readonly List<Lazy<IFareBasedRule>> _fareRulesImports = new List<Lazy<IFareBasedRule>>();
+
+    [ImportMany(typeof(IFareCapRule))]
+    private readonly List<Lazy<IFareCapRule>> _fareCapRulesImports = new List<Lazy<IFareCapRule>>();
 
     private void Compose<T>(T target)
     {
@@ -45,15 +50,20 @@ namespace MetroTransport.Application
 
     public void Resolve()
     {
-      if (!isloaded)
+      if (!_isloaded)
       {
         Compose(this);
-        foreach (var rules in rulesImports)
+        foreach (var rules in _fareRulesImports)
         {
            Host.Instance.Get<IFareRuleService>().AddFareRule(rules.Value);
         }
 
-        isloaded = true;
+        foreach (var rules in _fareCapRulesImports.OrderBy(m => m.Value.GetType().GetCustomAttributes(true).OfType<CapRuleAttribute>().Single().Order))
+        {
+          Host.Instance.Get<IFareCapService>().AddCapFareRule(rules.Value);
+        }
+
+        _isloaded = true;
       }
     }
   }

@@ -5,15 +5,19 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetroTransport.Domain", "MetroTransport.Domain\MetroTransport.Domain.csproj", "{75EC38CD-EE09-4F55-917D-581B6EDC45C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroTransport.Rules", "MetroTransport.Rules\MetroTransport.Rules.csproj", "{64540F40-34D3-497A-96FC-45AE8833B4A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetroTransport.Rules", "MetroTransport.Rules\MetroTransport.Rules.csproj", "{64540F40-34D3-497A-96FC-45AE8833B4A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroTransport.Infra", "MetroTransport.Infra\MetroTransport.Infra.csproj", "{7F5C281A-739F-416E-948D-98A2F8496A82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetroTransport.Infra", "MetroTransport.Infra\MetroTransport.Infra.csproj", "{7F5C281A-739F-416E-948D-98A2F8496A82}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7C7BD62B-1B2E-4AA9-AFA4-A117B65AAC12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroTransport.Application", "MetroTransport.Application\MetroTransport.Application.csproj", "{7894D4ED-3D1B-4428-8CD9-10FDAB85E791}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetroTransport.Application", "MetroTransport.Application\MetroTransport.Application.csproj", "{7894D4ED-3D1B-4428-8CD9-10FDAB85E791}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroTransport.UIConsole", "MetroTransport.UIConsole\MetroTransport.UIConsole.csproj", "{8CD3AEDB-0923-49A2-A2CD-6F15A4466F21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetroTransport.UIConsole", "MetroTransport.UIConsole\MetroTransport.UIConsole.csproj", "{8CD3AEDB-0923-49A2-A2CD-6F15A4466F21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetroTransport.FunctionalTests", "MetroTransport.FunctionalTests\MetroTransport.FunctionalTests.csproj", "{822DA9C0-A0B8-4B09-9832-BA0FEDE7E68D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroTransport.UnitTests", "MetroTransport.UnitTests\MetroTransport.UnitTests.csproj", "{F11BC527-26E4-4B92-8776-C37F19D8A445}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,9 +45,21 @@ Global
 		{8CD3AEDB-0923-49A2-A2CD-6F15A4466F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CD3AEDB-0923-49A2-A2CD-6F15A4466F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CD3AEDB-0923-49A2-A2CD-6F15A4466F21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822DA9C0-A0B8-4B09-9832-BA0FEDE7E68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822DA9C0-A0B8-4B09-9832-BA0FEDE7E68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822DA9C0-A0B8-4B09-9832-BA0FEDE7E68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822DA9C0-A0B8-4B09-9832-BA0FEDE7E68D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F11BC527-26E4-4B92-8776-C37F19D8A445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11BC527-26E4-4B92-8776-C37F19D8A445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11BC527-26E4-4B92-8776-C37F19D8A445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11BC527-26E4-4B92-8776-C37F19D8A445}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{822DA9C0-A0B8-4B09-9832-BA0FEDE7E68D} = {7C7BD62B-1B2E-4AA9-AFA4-A117B65AAC12}
+		{F11BC527-26E4-4B92-8776-C37F19D8A445} = {7C7BD62B-1B2E-4AA9-AFA4-A117B65AAC12}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1495D76C-59CE-4762-94A9-25626F9C127C}

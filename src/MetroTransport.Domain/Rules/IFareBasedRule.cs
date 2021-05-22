@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MetroTransport.Domain.Contracts
+namespace MetroTransport.Domain
 {
   public interface IFareBasedRule
   {

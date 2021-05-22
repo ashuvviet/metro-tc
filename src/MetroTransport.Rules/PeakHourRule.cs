@@ -1,8 +1,7 @@
 ﻿using System;
 using System.ComponentModel.Composition;
 using MetroTransport.Domain;
-using MetroTransport.Domain.Contracts;
-using MetroTransport.Infra;
+using MetroTransport.Infra.Extensions;
 
 namespace MetroTransport.Rules
 {

@@ -25,7 +25,7 @@ namespace MetroTransport.Infra
     public void AddTransient<TFrom, TTo>() where TTo : TFrom => container.RegisterType<TFrom, TTo>(TypeLifetime.Transient);
     public void AddScope<TFrom, TTo>() where TTo : TFrom => container.RegisterType<TFrom, TTo>(TypeLifetime.Scoped);
     public void AddSingleton<TFrom, TTo>() where TTo : TFrom => container.RegisterType<TFrom, TTo>(TypeLifetime.Singleton);
-    public T Resolve<T>() => container.Resolve<T>();
+    public T Get<T>() => container.Resolve<T>();
     public void Dispose()
     {
       container?.Dispose();
