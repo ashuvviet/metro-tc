@@ -1,27 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
 using MetroTransport.Application;
 using MetroTransport.Application.Services;
 using MetroTransport.Domain;
 using MetroTransport.Infra;
-using MetroTransport.Infra.Services;
-using MetroTransport.Rules;
 using Xunit;
 
 namespace MetroTransport.FunctionalTests
 {
-  public class TigerCardTests : IDisposable
+  public class TigerCardWeeklyCapTests : IDisposable
   {
     [Fact]
-    public void TestMultipleJournries()
+    public void TigerCardWeeklyCapMultiplejourneysTests()
     {
       //Arrange
-      var journeies = Setupprerequisite();
+      var journeys = Setupprerequisite();
 
 
       // Act
-      var fare = Host.Instance.Get<IFareRuleService>().CalculateFare(journeies);
+      var fare = Host.Instance.Get<IFareRuleService>().CalculateFare(journeys);
 
 
       // Assert
@@ -30,14 +27,7 @@ namespace MetroTransport.FunctionalTests
 
     private IEnumerable<Journey> Setupprerequisite()
     {
-      Host.Instance.AddSingleton<ILogService, LogService>();
-      Host.Instance.AddScope<IFareCapService, FareCapService>();
-      Host.Instance.AddScope<IFareRuleService, FareRuleService>();
-      Host.Instance.Get<IFareRuleService>().AddFareRule(new OffPeakHourRule());
-      Host.Instance.Get<IFareRuleService>().AddFareRule(new PeakHourRule());
-      Host.Instance.Get<IFareCapService>().AddCapFareRule(new WeeklyCapFareRule());
-      Host.Instance.Get<IFareCapService>().AddCapFareRule(new DailyCapFareRule());
-
+      StartUp.Initialize();
       var datetime = new DateTime(2021, 5, 24, 10, 0, 0, DateTimeKind.Local);
       var journeys = new List<Journey>()
       {
@@ -94,7 +84,7 @@ namespace MetroTransport.FunctionalTests
 
     public void Dispose()
     {
-      Host.Instance.Dispose();
+      StartUp.Dispose();
     }
   }
 }

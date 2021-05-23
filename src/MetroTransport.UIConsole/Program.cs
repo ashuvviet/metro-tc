@@ -13,6 +13,8 @@ namespace MetroTransport.UIConsole
     {
       StartUp.Initialize();
 
+      Console.WriteLine("out of use case2 given in case study");
+
       var datetime = new DateTime(2021, 5, 24, 10, 0, 0, DateTimeKind.Local);
       var journeys = new List<Journey>()
       {
@@ -69,6 +71,31 @@ namespace MetroTransport.UIConsole
       Console.WriteLine($"Output:{fare}");
 
       Host.Instance.Get<IFareCapService>().GenerateReport();
+
+      //// Enable to Do perform more tests
+
+      //Console.WriteLine("enter more journeys to card to tests more cases");
+      //var numberofJourneies = int.Parse(Console.ReadLine());
+      //var journeys2 = new List<Journey>();
+      //while (numberofJourneies > 0)
+      //{
+      //  Console.WriteLine("enter 'from' zone : ");
+      //  var sourceZone = int.Parse(Console.ReadLine());
+
+      //  Console.WriteLine("enter 'to' zone : ");
+      //  var destinationZone = int.Parse(Console.ReadLine());
+
+
+      //  Console.WriteLine("enter to punch time in YYYY-MM-DD HH:MM tt e.g.  2005-05-05 22:12 PM : ");
+      //  var punchtime = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd HH:mm tt", System.Globalization.CultureInfo.InvariantCulture);
+
+      //  journeys2.Add(new Journey(new Zone(sourceZone), new Zone(destinationZone), punchtime));
+      //  numberofJourneies--;
+      //}
+
+      //var fare2 = Host.Instance.Get<IFareRuleService>().CalculateFare(journeys2);
+      //Console.WriteLine($"Output:{fare2}");
+      //Host.Instance.Get<IFareCapService>().GenerateReport();
 
       StartUp.Dispose();
 

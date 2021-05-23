@@ -29,7 +29,7 @@ namespace MetroTransport.Rules
       // case; daily cap reached.
       if (cap.Parent.TotalCharge >= weeklyCap)
       {
-        revisedFare = 0;
+        return 0;
       }
 
       if (cap.Parent.TotalCharge + revisedFare >= weeklyCap)

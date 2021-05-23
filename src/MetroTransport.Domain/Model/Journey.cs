@@ -4,7 +4,7 @@ namespace MetroTransport.Domain
 {
   public class Journey
   {
-    public Zone Source { get; }
+    public Zone Source { get;  }
     public Zone Destination { get; }
 
     public DateTime PunchTime { get; }

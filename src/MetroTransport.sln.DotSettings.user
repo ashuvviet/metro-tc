@@ -5,7 +5,20 @@
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d30b8388_002Dd4bc_002D4e8e_002Da53d_002Dd338ebda7ac7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestMultipleJournries #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::822DA9C0-A0B8-4B09-9832-BA0FEDE7E68D::.NETCoreApp,Version=v5.0::MetroTransport.FunctionalTests.TigerCardTests.TestMultipleJournries&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::822DA9C0-A0B8-4B09-9832-BA0FEDE7E68D::.NETCoreApp,Version=v5.0::MetroTransport.FunctionalTests.TigerCardTests.TestMultipleJournries&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F11BC527-26E4-4B92-8776-C37F19D8A445::.NETCoreApp,Version=v5.0::MetroTransport.UnitTests.FareCapServiceTests.ApplyFareCapTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F11BC527-26E4-4B92-8776-C37F19D8A445::.NETCoreApp,Version=v5.0::MetroTransport.UnitTests.FareCapServiceTests.ApplyFareCapTest_Multiple&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F11BC527-26E4-4B92-8776-C37F19D8A445::.NETCoreApp,Version=v5.0::MetroTransport.UnitTests.Application.FareRuleServiceTests.CalculateFare_Journey&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F11BC527-26E4-4B92-8776-C37F19D8A445::.NETCoreApp,Version=v5.0::MetroTransport.UnitTests.Application.FareRuleServiceTests.CalculateFare_NoRules&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F11BC527-26E4-4B92-8776-C37F19D8A445::.NETCoreApp,Version=v5.0::MetroTransport.UnitTests.Rules.DailyCapFareRuleTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F11BC527-26E4-4B92-8776-C37F19D8A445::.NETCoreApp,Version=v5.0::MetroTransport.UnitTests.Rules.WeeklyCapFareRuleTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F11BC527-26E4-4B92-8776-C37F19D8A445::.NETCoreApp,Version=v5.0::MetroTransport.UnitTests.Rules.OffPeakHourRuleTests.CanExecuteTest_False&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F11BC527-26E4-4B92-8776-C37F19D8A445::.NETCoreApp,Version=v5.0::MetroTransport.UnitTests.Rules.OffPeakHourRuleTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::F11BC527-26E4-4B92-8776-C37F19D8A445::.NETCoreApp,Version=v5.0::MetroTransport.UnitTests.Rules.PeakHourRuleTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;Project Location="C:\_Ashutosh\metro-tc\src\MetroTransport.FunctionalTests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;MetroTransport.FunctionalTests&amp;gt;" /&gt;&#xD;
+    &lt;Project Location="C:\_Ashutosh\metro-tc\src\MetroTransport.UnitTests" Presentation="&amp;lt;Tests&amp;gt;\&amp;lt;MetroTransport.UnitTests&amp;gt;" /&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

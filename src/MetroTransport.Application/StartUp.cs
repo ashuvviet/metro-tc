@@ -4,6 +4,7 @@ using System.Reflection;
 using MetroTransport.Application.Services;
 using MetroTransport.Infra;
 using MetroTransport.Infra.Services;
+using Unity;
 
 namespace MetroTransport.Application
 {
@@ -11,6 +12,7 @@ namespace MetroTransport.Application
   {
     public static void Initialize()
     {
+      Host.Instance.Initialize(new UnityContainer());
       Host.Instance.AddSingleton<ILogService, LogService>();
       Host.Instance.AddScope<IFareCapService, FareCapService>();
       Host.Instance.AddScope<IFareRuleService, FareRuleService>();
