@@ -35,7 +35,7 @@ namespace MetroTransport.Domain
 
     public override void AddJourneyFare(double fare) => this.TotalCharge += fare;
 
-    public override void ResetZone(int from, int to)
+    public void ResetZone(int from, int to)
     {
       SourceZone = from;
       DestinationZone = to;

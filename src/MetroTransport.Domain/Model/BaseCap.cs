@@ -22,9 +22,5 @@ namespace MetroTransport.Domain
     public double TotalCharge { get; protected set; }
 
     public abstract void AddJourneyFare(double fare);
-
-    public virtual void ResetZone(int from, int to)
-    {
-    }
   }
 }

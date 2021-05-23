@@ -96,5 +96,7 @@ namespace MetroTransport.UnitTests.Application
       // Assert
       Assert.Throws<InvalidOperationException>(action);
     }
+
+   
   }
 }

@@ -9,6 +9,8 @@ namespace MetroTransport.UnitTests.Rules
   {
     [Theory]
     [InlineData(1, 1, 24, 8, true)]
+    [InlineData(1, 1, 24, 18, false)]
+    [InlineData(1, 1, 30, 19, false)]
     [InlineData(1, 2, 24, 18, true)]
     [InlineData(1, 1, 24, 11, false)]
     [InlineData(1, 1, 29, 10, true)]
