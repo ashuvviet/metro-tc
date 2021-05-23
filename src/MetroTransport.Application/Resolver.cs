@@ -15,8 +15,6 @@ namespace MetroTransport.Application
 {
   public class Resolver
   {
-    private static volatile bool _isloaded;
-
     [ImportMany(typeof(IFareBasedRule))]
     private readonly List<Lazy<IFareBasedRule>> _fareRulesImports = new List<Lazy<IFareBasedRule>>();
 
@@ -50,8 +48,6 @@ namespace MetroTransport.Application
 
     public void Resolve()
     {
-      if (!_isloaded)
-      {
         Compose(this);
         foreach (var rules in _fareRulesImports)
         {
@@ -62,9 +58,6 @@ namespace MetroTransport.Application
         {
           Host.Instance.Get<IFareCapService>().AddCapFareRule(rules.Value);
         }
-
-        _isloaded = true;
-      }
     }
   }
 }
